@@ -1,10 +1,10 @@
-AUTHORS: Xiaoying Qu and Yiming Xia as a final project for CS251, Software Design
+AUTHORS: Xiaoying Qu and Yiming Xia as a final project for CS257, Software Design
 
 
 To use:
-# first initialize the pokemon database
+# first initialize the car2022 database
 sudo service postgresql start
-cat data.sql | psql -U postgres pokemon_db
+cat data.sql | psql -U postgres car2022_db
 # api.py will access pokemon_db with credentials in config.py
 
 # run the flask webapp with
