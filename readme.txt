@@ -1,3 +1,32 @@
+AUTHORS: Xiaoying Qu and Yiming Xia as a final project for CS251, Software Design
+
+
+To use:
+# first initialize the pokemon database
+sudo service postgresql start
+cat data.sql | psql -U postgres pokemon_db
+# api.py will access pokemon_db with credentials in config.py
+
+# run the flask webapp with
+python3 app.py localhost 5000
+# access this database-linked website on brower with
+http://localhost:5000/
+
+
+DATA: a dataset of 500+ Pokemon and their attributes, such as types (e.g. water, fire, grass, electric, flying, etc.) and abilities (e.g. berserk, dazzling, fur coat, gluttony, etc.).
+
+Our dataset comes from https://www.kaggle.com/mrdew25/pokemon-database.
+
+STATUS:
+
+- the home page works great.
+- each Pokemon's individual page is great.
+- the infinite scrolling mechanism is awesome.
+- the handling of user input on the advanced search page could be more robust. The user isn't alerted if some non-digit character (other than a hyphen, which is allowed), is entered into a field that is supposed to contain digits. We also don't check for this when processing user input. We would add this if we had more time.
+
+
+
+
 AUTHORS: Xiaoying Qu and Yiming Xia
 
 DATA: different properties of car models, can sort by fuel and co2 and engine size.
